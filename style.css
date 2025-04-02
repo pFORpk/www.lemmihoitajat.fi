@@ -1,0 +1,255 @@
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background-color: #00A170;
+    color: #fff;
+    padding: 100px 35px;
+    font-family: 'Pacifico', cursive;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: tomato;
+    font-size: 50px;
+  }
+  .logo {
+    color: tomato;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: tomato;
+  }
+  .carousel-indicators li {
+    border-color: #00A170;
+  }
+  .carousel-indicators li.active {
+    background-color: #00A170;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #00A170; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #00A170;
+    background-color: #fff !important;
+    color: #00A170;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: tomato !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #00A170;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #00A170;
+    z-index: 9999;
+    border: 0;
+    font-size: 16px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: tomato !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  .footer-image {
+    width: 100%;
+    height: 30vh; /* Set your desired height for the footer */
+    object-fit: cover; /* This property ensures the image covers the entire container */
+  }
+  .about-us-image{
+    width: 100%; /* Set the image width to 100% of its container */
+    height: auto; /* Allow the height to adjust proportionally */
+    border-radius: 50%;
+  }
+/* Custom styles for the jumbotron */
+.jumbotron {
+    background-color: #3498db; /* Set background color */
+    color: #ffffff; /* Set text color */
+    padding: 70px 15px; /* Add some padding */
+}
+
+/* Style the heading inside the jumbotron */
+.jumbotron h1 {
+    font-size: 80px; /* Set font size */
+}
+
+/* Style the paragraph inside the jumbotron */
+.jumbotron p {
+    font-size: 18px; /* Set font size */
+}
+
+/* Make the image responsive */
+.jumbotron img {
+    max-width: 100%; /* Make sure the image doesn't exceed the container width */
+    height: auto; /* Maintain the image's aspect ratio */
+    display: block; /* Remove any default inline styles */
+    margin: 0 auto 20px; /* Center the image horizontally and add some bottom margin */
+}
+
+/* Optional: Add a border-radius for a rounded image */
+.jumbotron img.jombotron-image {
+    border-radius: 10px; /* Adjust the border-radius as needed */
+}
+
+/* Optional: Add a box shadow for a subtle effect */
+.jumbotron img.jombotron-image {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the box-shadow as needed */
+}
+
+
+  footer .glyphicon {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: tomato;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+
+  }
+
+/* Ensure the .row that contains .col-sm-3 elements acts as a flex container */
+#pricing .row.slideanim {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Optional: Make sure each .col-sm-3 stretches to fill the container */
+#pricing .col-sm-3 {
+  display: flex;
+  flex: 1;
+}
+
+/* Make the panel display flex to allow child elements to fill the space */
+#pricing .panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Make the panel-body grow to ensure footer is pushed to the bottom */
+#pricing .panel-body {
+  flex: 1;
+}
+
+/* Ensure the panel-footer sticks to the bottom */
+#pricing .panel-footer {
+  margin-top: auto;
+}
+
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
